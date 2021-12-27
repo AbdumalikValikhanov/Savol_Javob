@@ -17,9 +17,8 @@ public class PageQuestion extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.question_page_fragment_layout,container,false);
-        binding=QuestionPageFragmentLayoutBinding.bind(view);
-        return view;
+        binding=QuestionPageFragmentLayoutBinding.inflate(inflater);
+        return binding.getRoot();
     }
 
     @Override
